@@ -1,7 +1,7 @@
 const https = require('https');
 
 // Your Render URL (replace with your actual URL)
-const RENDER_URL = 'YOUR_RENDER_URL'; // e.g., 'https://your-app-name.onrender.com'
+const RENDER_URL = 'https://greenhouse-1ue7.onrender.com'; // e.g., 'https://your-app-name.onrender.com'
 
 // Function to make the request
 function keepAlive() {
