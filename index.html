@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-leaf"></i> Greenhouse Control</h1>
+            <div id="connectionStatus" class="status-indicator">
+                <i class="fas fa-circle"></i> Connecting...
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="sensor-panel">
+                <div class="sensor-card temperature">
+                    <i class="fas fa-thermometer-half"></i>
+                    <div class="sensor-info">
+                        <h2>Temperature</h2>
+                        <div class="value" id="temperature">--°C</div>
+                    </div>
+                </div>
+                
+                <div class="sensor-card humidity">
+                    <i class="fas fa-tint"></i>
+                    <div class="sensor-info">
+                        <h2>Humidity</h2>
+                        <div class="value" id="humidity">--%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="control-panel">
+                <div class="control-card">
+                    <i class="fas fa-window-maximize"></i>
+                    <h2>Window</h2>
+                    <button id="windowButton" class="control-button">
+                        <span class="button-text">Open Window</span>
+                    </button>
+                </div>
+
+                <div class="control-card">
+                    <i class="fas fa-fan"></i>
+                    <h2>Ventilation</h2>
+                    <button id="fanButton" class="control-button">
+                        <span class="button-text">Turn ON Fan</span>
+                    </button>
+                </div>
+
+                <div class="control-card">
+                    <i class="fas fa-tint"></i>
+                    <h2>Water Pump</h2>
+                    <button id="pumpButton" class="control-button">
+                        <span class="button-text">Turn ON Pump</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
