@@ -189,31 +189,85 @@ body::before {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .app-container {
-        padding: 15px;
+        padding: 10px;
     }
 
     .app-header {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         text-align: center;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .sensor-panel, .control-panel {
+        gap: 15px;
     }
 
     .sensor-card, .control-card {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .sensor-card i {
+        font-size: 2rem;
     }
 
     .sensor-info .value {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .control-card i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .control-card h2 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .control-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
+    .app-container {
+        padding: 8px;
+    }
+
     .sensor-panel, .control-panel {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .sensor-card {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .control-card {
+        padding: 12px;
+    }
+
+    .control-card i {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .status-indicator {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .dashboard {
+        gap: 20px;
     }
 }
