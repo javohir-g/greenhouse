@@ -1,5 +1,5 @@
 // Blynk configuration
-const BLYNK_AUTH_TOKEN = 'hAp-BAQHAVOWyymiUU34ujcHg3Wi3JxZ';
+const BLYNK_AUTH_TOKEN = 'hAp-BAQHAVOWyymiUU34ujcHg3Wi3JxZ111111';
 const BLYNK_SERVER = 'https://blynk.cloud/external/api';
 
 // DOM elements
